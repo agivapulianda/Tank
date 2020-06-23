@@ -29,7 +29,7 @@ public class GerakPeluruScript : MonoBehaviour
        myTransform.position = PosisiTerbangPeluru(_posisiAwal, _kecAwal, waktuTerbangPeluru, _sudutTembak);
     }
 
-    private Vector3 PosisiTerbangPeluru(Vector3 _posisiAwal,float _kecAwal, float _sudut , float _waktu)
+    private Vector3 PosisiTerbangPeluru(Vector3 _posisiAwal, float _kecAwal,  float _waktu, float _sudut)
     {
         float _x = _posisiAwal.x;
         float _y = _posisiAwal.y + ((_kecAwal * _waktu * Mathf.Sin(_sudut * Mathf.PI  /180)) - (0.5f * 10 * Mathf.Pow(_waktu, 2)));

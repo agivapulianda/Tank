@@ -89,7 +89,7 @@ public class TankBehaviorScript : MonoBehaviour
       else if (stateRotasiVertikal == "atas")
       {
          selongsong.transform.localEulerAngles = new Vector3(
-            -14f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
+            -14.5f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
       }
       #endregion
 
