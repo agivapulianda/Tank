@@ -27,7 +27,7 @@ public class GerakPeluruScript : MonoBehaviour
        myTransform.position = PosisiTerbangPeluru(myTransform.position);
     }
 
-    private Vector3 PosisiTerbangPeluru(Vector3 _posisiSaatIni)
+    private Vector3 PosisiTerbangPeluru(Vector3 _posisiSaatIni,float _kecAwal, float _sudut , float _waktu)
     {
         float _x = _posisiSaatIni.x;
         float _y = _posisiSaatIni.y;
