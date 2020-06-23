@@ -9,7 +9,7 @@ public class TankBehaviorScript : MonoBehaviour
     private GameObject titikTembakan;
     private AudioSource audioSource;
     private string stateRotasiVertikal; //aman, bawah, atas
-    
+    public float sudutMeriam;
     [HideInInspector]
     public float nilaiRotasiY;
     public float kecepatanRotasi = 20;
@@ -47,6 +47,7 @@ public class TankBehaviorScript : MonoBehaviour
          {
             myTransform.Rotate(Vector3.forward * kecepatanRotasi * Time.deltaTime, Space.Self );
          }
+      sudutMeriam = myTransform.localEulerAngles.z;
       #endregion
       
       #region Menentukan State
