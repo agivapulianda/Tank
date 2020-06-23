@@ -9,6 +9,7 @@ public class TankBehaviorScript : MonoBehaviour
     private GameObject titikTembakan;
     private AudioSource audioSource;
     private string stateRotasiVertikal; //aman, bawah, atas
+    [HideInInspector]
     public float sudutMeriam;
     [HideInInspector]
     public float nilaiRotasiY;

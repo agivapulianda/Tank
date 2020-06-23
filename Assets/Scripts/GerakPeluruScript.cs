@@ -9,6 +9,7 @@ public class GerakPeluruScript : MonoBehaviour
     private TankBehaviorScript tankBehavior;
     private float _kecAwal;
     private float _sudutTembak;
+    
     private float _sudutMeriam;
     private Vector3 _posisiAwal;
 
@@ -37,7 +38,7 @@ public class GerakPeluruScript : MonoBehaviour
 
         float _y = _posisiAwal.y + ((_kecAwal * _waktu * Mathf.Sin(_sudutTembak * Mathf.PI  /180)) - (0.5f * 10 * Mathf.Pow(_waktu, 2)));
         
-        float _z = _posisiAwal.z + (_kecAwal * _waktu * Mathf.Cos(_sudutTembak * Mathf.PI  /180));
+        float _z = _posisiAwal.z + (_kecAwal * _waktu * Mathf.Cos(_sudutMeriam * Mathf.PI  /180));
 
         return new Vector3(_x, _y, _z);
     }
