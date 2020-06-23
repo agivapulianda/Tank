@@ -84,12 +84,12 @@ public class TankBehaviorScript : MonoBehaviour
       else if (stateRotasiVertikal == "bawah")
       {
          selongsong.transform.localEulerAngles = new Vector3(
-            -0.1f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
+            -0.5f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
       }
       else if (stateRotasiVertikal == "atas")
       {
          selongsong.transform.localEulerAngles = new Vector3(
-            -14.9f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
+            -14f, selongsong.transform.localEulerAngles.y, selongsong.transform.localEulerAngles.z);
       }
       #endregion
 
