@@ -358,8 +358,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 9.32, z: -2.77}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.859999, z: -254.01001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 839471379}
   m_Layer: 0
   m_Name: Tanah
-  m_TagString: Untagged
+  m_TagString: Land
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 2240688851969099428, guid: 53de2164244c72e4893b2bf6ed06105e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.8
+      value: -231
       objectReference: {fileID: 0}
     - target: {fileID: 2240688851969099428, guid: 53de2164244c72e4893b2bf6ed06105e,
         type: 3}
@@ -617,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1688277797, guid: 53de2164244c72e4893b2bf6ed06105e, type: 3}
       propertyPath: kecepatanAwalPeluru
-      value: 40
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53de2164244c72e4893b2bf6ed06105e, type: 3}

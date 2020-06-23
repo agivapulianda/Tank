@@ -9,9 +9,13 @@ public class GerakPeluruScript : MonoBehaviour
     private TankBehaviorScript tankBehavior;
     private float _kecAwal;
     private float _sudutTembak;
-    
+    private AudioSource audioSource;
     private float _sudutMeriam;
     private Vector3 _posisiAwal;
+
+    public GameObject ledakan;
+    public AudioClip audioLedakan;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +26,7 @@ public class GerakPeluruScript : MonoBehaviour
        _sudutTembak = tankBehavior.nilaiRotasiY;
        _posisiAwal = myTransform.position;
        _sudutMeriam = tankBehavior.sudutMeriam;
+       audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,5 +46,18 @@ public class GerakPeluruScript : MonoBehaviour
         float _z = _posisiAwal.z + (_kecAwal * _waktu * Mathf.Cos(_sudutMeriam * Mathf.PI  /180));
 
         return new Vector3(_x, _y, _z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Land")
+        {
+            GameObject go = Instantiate(ledakan, myTransform.position, Quaternion.identity);
+            Destroy(go, 2f);
+
+            audioSource.PlayOneShot(audioLedakan);
+            
+            Destroy(this.gameObject, 3f);
+        }
     }
 }
