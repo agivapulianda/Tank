@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GameManagerScript.cs" />
      <Compile Include="Assets\Scripts\GerakPeluruScript.cs" />
      <Compile Include="Assets\Scripts\TankBehaviorScript.cs" />
      <None Include="Assets\3D\Tank Shell\Readme.txt" />
